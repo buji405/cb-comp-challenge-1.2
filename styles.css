@@ -101,7 +101,7 @@ button {
   background: url(assets/right-arrow.svg) no-repeat;
   background-size: cover;
   position: absolute;
-  top: 50vh;
+  top: 50%;
   left: 85%;
 }
 
@@ -109,7 +109,7 @@ button {
   background: url(assets/left-arrow.svg) no-repeat;
   background-size: cover;
   position: absolute;
-  top: 50vh;
+  top: 50%;
   right: 85%;
 }
 
@@ -259,12 +259,10 @@ button {
   }
 
   .right-arrow {
-    top: 22vh;
     left: 90%;
   }
 
   .left-arrow {
-    top: 22vh;
     right: 90%;
   }
 }
