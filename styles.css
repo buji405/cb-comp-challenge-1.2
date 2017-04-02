@@ -39,7 +39,7 @@ button {
   color: #fff;
   padding: 10px;
   cursor: pointer;
-  width: 120px;
+  width: 130  px;
   align-items: center;
 }
 
@@ -65,7 +65,7 @@ button {
 .dots {
   position: absolute;
   top: 30px;
-  margin-left: 80%;
+  right: 30px;
   height: 20px;
   width: 50px;
 }
@@ -89,6 +89,7 @@ button {
   width: 40px;
   height: 40px;
   opacity: .7;
+  transform: translateY(-50%);
 }
 
 .right-arrow:hover,
@@ -122,6 +123,8 @@ button {
 
 .icon:hover {
   cursor: pointer;
+  width: 60px;
+  height: 60px;
 }
 
 .icon1 {
@@ -233,10 +236,6 @@ button {
     height: 20%;
   }
 
-  .dots {
-    margin-left: 90%;
-  }
-
   .div1,
   .div2 {
     width: 100%;
@@ -274,10 +273,6 @@ button {
   .hero {
     background-position: center;
   }
-
-  .dots {
-    margin-left: 87%;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -293,10 +288,6 @@ button {
 
   .title {
     padding-bottom: 10px;
-  }
-
-  .dots {
-    margin-left: 82%;
   }
 
   .right-arrow {
