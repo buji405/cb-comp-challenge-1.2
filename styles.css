@@ -41,7 +41,6 @@ button {
   cursor: pointer;
   width: 120px;
   align-items: center;
-  padding-left: 10px;
 }
 
 .about {
@@ -61,6 +60,56 @@ button {
 
 .contact {
   margin: 0 5px 0 0;
+}
+
+.dots {
+  position: absolute;
+  top: 30px;
+  margin-left: 80%;
+  height: 20px;
+  width: 50px;
+}
+
+.dot1,
+.dot2 {
+  background: url(assets/dot.svg) no-repeat;
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.dot2{
+  opacity: .6;
+}
+
+.right-arrow,
+.left-arrow {
+  width: 40px;
+  height: 40px;
+  opacity: .7;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+  opacity: 1;
+}
+
+.right-arrow{
+  background: url(assets/right-arrow.svg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50vh;
+  left: 85%;
+}
+
+.left-arrow {
+  background: url(assets/left-arrow.svg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50vh;
+  right: 85%;
 }
 
 .icon {
@@ -159,6 +208,7 @@ button {
 
 .hero-container {
   width: 40%;
+  position: relative;
 }
 
 .hero {
@@ -169,9 +219,22 @@ button {
 
 @media screen and (max-width: 910px) {
 
+  .body-container {
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  .boxes-container {
+    width: 100%;
+  }
+
   .box {
     width: 50%;
-    height: 16.65%;
+    height: 20%;
+  }
+
+  .dots {
+    margin-left: 90%;
   }
 
   .div1,
@@ -180,36 +243,40 @@ button {
   }
 
   .div1 {
-    height: 33.3333%;
+    height: 30vh;
   }
 
   .hero {
-    background-position: -150px 0px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-
-  .body-container {
-    height: 100%;
-    flex-wrap: wrap;
+    background-position: 0px -230px;
+    height: 50vh;
+    width: 100%;
   }
 
   .hero-container {
     display: flex;
     order: -1;
-    height: 250px;
+    height: 50vh;
     width: 100%;
   }
 
+  .right-arrow {
+    top: 22vh;
+    left: 90%;
+  }
+
+  .left-arrow {
+    top: 22vh;
+    right: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
   .hero {
-    height: 250px;
-    width: 100%;
     background-position: center;
   }
 
-  .boxes-container {
-    width: 100%;
+  .dots {
+    margin-left: 87%;
   }
 }
 
@@ -226,5 +293,17 @@ button {
 
   .title {
     padding-bottom: 10px;
+  }
+
+  .dots {
+    margin-left: 82%;
+  }
+
+  .right-arrow {
+    left: 85%;
+  }
+
+  .left-arrow {
+    right: 85%;
   }
 }
