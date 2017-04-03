@@ -4,8 +4,8 @@
 
 body {
   height: 100vh;
-  font-family: 'Open Sans', sans-serif;
   color: #fff;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 }
 
@@ -20,8 +20,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33.333%;
   flex-direction: column;
+  width: 33.333%;
   height: 33.333%;
 }
 
@@ -33,14 +33,14 @@ body {
 
 button {
   display: flex;
-  font-size: 16px;
+  align-items: center;
+  width: 130px;
   background: #646F58;
   border: 2px solid #fff;
   color: #fff;
-  padding: 10px;
   cursor: pointer;
-  width: 130  px;
-  align-items: center;
+  font-size: 16px;
+  padding: 10px;
 }
 
 .about {
@@ -66,18 +66,18 @@ button {
   position: absolute;
   top: 30px;
   right: 30px;
-  height: 20px;
   width: 50px;
+  height: 20px;
 }
 
 .dot1,
 .dot2 {
   background: url(assets/dot.svg) no-repeat;
   background-size: cover;
-  width: 10px;
-  height: 10px;
   display: inline-block;
   margin-left: 3px;
+  width: 10px;
+  height: 10px;
 }
 
 .dot2{
@@ -101,30 +101,30 @@ button {
   background: url(assets/right-arrow.svg) no-repeat;
   background-size: cover;
   position: absolute;
-  top: 50%;
   left: 85%;
+  top: 50%;
 }
 
 .left-arrow {
   background: url(assets/left-arrow.svg) no-repeat;
   background-size: cover;
   position: absolute;
-  top: 50%;
   right: 85%;
+  top: 50%;
 }
 
 .icon {
+  background: url(assets/plane.svg) no-repeat;
+  background-size: cover;
   width: 50px;
   height: 50px;
   margin-bottom: 20px;
-  background: url(assets/plane.svg) no-repeat;
-  background-size: cover;
 }
 
 .icon:hover {
-  cursor: pointer;
   width: 60px;
   height: 60px;
+  cursor: pointer;
   transition: width 200ms, height 200ms;
 }
 
@@ -170,11 +170,11 @@ button {
 }
 
 .div1 {
-  padding: 0 30px 0 30px;
+  align-items: flex-start;
   width: 66.6667%;
   background: #646F58;
-  align-items: flex-start;
   line-height: 25px;
+  padding: 0 30px 0 30px;
 }
 
 .div2 {
@@ -211,8 +211,8 @@ button {
 }
 
 .hero-container {
-  width: 40%;
   position: relative;
+  width: 40%;
 }
 
 .hero {
@@ -224,8 +224,8 @@ button {
 @media screen and (max-width: 910px) {
 
   .body-container {
-    height: 100%;
     flex-wrap: wrap;
+    height: 100%;
   }
 
   .boxes-container {
